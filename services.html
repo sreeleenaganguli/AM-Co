@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="images\caindia-logo\CA India Logo\CA India Logo.png"/>
+    <title>AM & Co-Our Services</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--/*font awesome icons*/-->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!--rubik font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Rubik:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <!--custom css-->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--media css-->
+    <link type="text/css" rel="stylesheet" href="css/media.css" />
+
+    <!--jquery ui files-->
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+
+    <!--owl carousel-->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+    <div id="arrow">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <header id="home">
+        <div class="container">
+            <div class="top-bar">
+                <div class="nav-col">
+                    <div class="logo">
+                        <img src="images/AMlogo.png" class="img-responsive" alt="logo" />
+                    </div>
+                    <!--logo-->
+                    <div class="menu">
+                        <a class="active" href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="team.html">Team</a>
+                        <a href="#services.html">Services</a>
+                        <a href="implinks.html">Important Links</a>
+                        <a href="#careers.html">Career</a>
+                        <a href="knowledge">Knowledge Repertoire</a>
+                        <a href="#contactus.html">Contact Us</a>
+                        <!-- <a class="contact-info" href="tel:+91 9830107220">Call US: +91 9830107220</a>                    </div> -->
+                    <div class="clear"></div>
+                    <!--clear-->
+                </div>
+                <!--nav-col-->
+                <!-- <div class="cnt-info-col">
+                    <a href="tel:+91 9830107220"><span>Call US:</span>+91 9830107220</a>
+                </div>
+                <div class="clear"></div> -->
+                <!--clear-->
+            </div>
+            <!--top-bar-->
+        </div>
+    </header>
+    <section id="mobile-menu">
+        <div class="container-mobile">
+            <div class="mobile-logo">
+                <img src="images/AMlogo.png" class="img-responsive" alt="logo" />
+                <div class="clear"></div>
+                <!--clear-->
+            </div>
+            <!--nav-col-->
+            <div class="cnt-info-col">
+                <!-- <button type="button" id="toggle-bar"><i class="fa fa-bars"></i></button> -->
+                <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+                <label for="menu-toggle" id="toggle-bar"><i class="fa fa-bars"></i></label>
+                    <div class="dropdown-menu">
+                        <a href="index.html">Home</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="team.html">Team</a>
+                        <a href="services.html">Services</a>
+                        <a href="implinks.html">Important Links</a>
+                        <a href="careers.html">Career</a>
+                        <!-- <a href="knowledge">Knowledge Repertoire</a> -->
+                        <a href="contactus.html">Contact Us</a>
+                    </div>
+            <div class="clear"></div>
+            <!--clear-->
+        </div>
+    </section>
+    <style>
+        /* Hide the actual checkbox */
+        .menu-toggle {
+            display: none;
+        }
+
+        /* Style for the dropdown menu - hidden initially */
+        .dropdown-menu {
+
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100%;
+            /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+            z-index: 1;
+        }
+
+        /* Dropdown Menu Links */
+        .dropdown-menu a {
+            color: rgb(10, 19, 106);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Show the menu when the hidden checkbox is checked */
+        .menu-toggle:checked + #toggle-bar + .dropdown-menu {
+            display: block;
+        }
+
+        /* Optional: Add some hover effects for dropdown links */
+        .dropdown-menu a:hover {
+            background-color: #9bacf4;
+        }
+
+        body {
+            font-family: 'Nunito';
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+        .containerau {
+            max-width: 95%;
+            text-align: justify;
+            margin: 110px auto;
+            padding: 0px;
+            /* background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+        .containersv {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjust as needed */
+            align-items: center;
+        }
+
+        h1,
+        h2 {
+            color: #0c2b6f;
+        }
+
+        .box {
+            width: 85%;
+            height: 100%;
+            background-color: #add5fa;
+            color: #130c5d;
+            text-align: left;
+            line-height: 28px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            margin-right: 10px; /* Add spacing between boxes */
+        }
+
+        .box:last-child {
+            margin-right: 0; /* Remove margin from the last box */
+        }
+
+        .box:hover {
+            width: 100%; /* Increase width on hover */
+            background-color: #ffffff;
+            color: rgb(41, 98, 231);
+        }
+
+        .box:hover::before {
+            content: attr(data-hover-text);
+            position: relative;
+            left: -100%; /* Move the text to the left initially */
+            top: 0;
+            width: 100%;
+            background-color: #41a5e8;
+            color: #5f9fe7;
+            padding: 0px;
+            transition: left 0.3s ease;
+        }
+
+        .box:hover::before {
+            left: 0; /* Move the text back to its original position on hover */
+        }
+
+    </style>
+
+    <div class="containerau">
+        <h1>Services</h1>
+        <br>
+    <div class="containersv">
+        <div class="box" data-hover-text="">
+            <h3>Audit and Assurance</h3>
+            <br>
+            <p>We conduct detailed financial audits that go beyond mere compliance. Our in-depth analysis provides 
+                you with a clear understanding of your financial position, helping you make informed decisions and 
+                instilling confidence in stakeholders. Our team comprises of highly skilled and experienced auditors 
+                who bring a wealth of knowledge across various industries. Key industries that we’ve catered to include 
+                health sectors, entertainment sector, power and manufacturing, food & hospitality, mining, consumer 
+                durables, to name a few.
+                <br><br>
+                <h3>We provide the following Audit and Assurance Services</h3>
+                <br>
+                <ul>
+                <li>• Statutory Audits, Tax Audit, Review of Financial Statements and GST Audit</li>
+                <li>• Internal Audit</li>
+                <li>• Stock and Fixed Assets Audit</li>
+                <li>• CARO 2020 Advisory</li>
+                </ul>
+                </p>
+    </div>
+        <div class="box" data-hover-text="">
+            <h3>Taxation Services</h3>
+            <br> 
+            <p>Navigating the intricate web of tax regulations is our expertise, we provide comprehensive tax compliance services, ensuring that your business meets all the complex regulatory requirements. From filing accurate and timely returns to addressing specific industry-related tax considerations, we've got you covered. 
+                <br>
+                <br>
+                <h3>Our services include consideration of the following laws and regulations:</h3>
+                <br> 
+                <ul>
+                <li>•	Direct Taxation</li>
+                <li>•	GST Laws</li>
+                <li>•	Central Sales Tax Laws</li>
+                <li>•	Professional Taxation and State Value Added Tax</li>
+                <li>•	Cross Border Tax Advisory and Transfer Pricing</li>
+            </p>    
+        </div>
+        <div class="box" data-hover-text="">
+            <h3>Corporate Law & Secretarial Services</h3>
+            <br>
+            <p>
+                We understand the nuances of corporate governance, compliance, and transactions, ensuring that your 
+                business is in capable hands. Whether you're launching a new venture or restructuring an existing one, 
+                our Company Law Services cover the full spectrum of incorporation and business structuring. Our team of 
+                qualified Company Secretaries provide strategic counsel on corporate governance, intellectual property rights, 
+                secretarial audits, legal opinions and a plethora of other secretarial and compliance services
+            <br>
+            </p>
+        </div>
+        <div class="box" data-hover-text="">
+            <h3>Project Financing</h3>
+            <p>
+                <br> 
+                We specialize in strategic financial structuring for projects of all sizes and complexities. Our team of financial experts collaborates with the client to design optimal financing packages that align with your project's goals and financial objectives. We conduct thorough risk assessments to identify potential challenges and mitigate risks associated with your project. 
+                Our team identifies and helps you leverage available government grants and incentives to enhance your project's financial viability.
+            </p>  
+        </div>
+        <div class="box" data-hover-text="">
+            <h3>Corporate Restructuring</h3>
+            <br>
+            <p>
+                AMC recognizes that corporate restructuring is a critical process that requires precision, expertise, and a deep understanding of both the financial and operating intricacies. We remain committed to supporting our clients through the complex process of restructuring. 
+                <br><br>
+                <h3>Services offered include-</h3>
+                <br>
+                <ul> 
+                <li>• Capital Restructuring</li>
+                <li>• Documentation & Advisory</li> 
+                <li>• filings </li> 
+                <li>• Forecasting and Debt Restructuring</li>
+                </ul> 
+            </p>   
+        </div>
+        <div class="box" data-hover-text="">
+            <h3>Social Sector Advisory</h3>
+            <br>
+            <p>AMC is committed to driving a positive change in the social sector by way of specialized advisory services to reputed NGOs, Section 8 Companies and several dynamic young entrepreneurs, willing to contribute towards the society and environment as a whole. Our team of experienced professionals provide for expert tax planning, financial literacy planning, impact measurement and reporting and providing adequate budgeting and forecasting strategies. We provide ongoing support to our clients to help the social enterprises navigate the evolving landscape of the social sector. 
+            </p>
+        </div>
+        <div class="box" data-hover-text="">
+            <h3>MSME Consultation</h3>
+            <br>
+            <p>
+                In the dynamic landscape of today’s business environment, Micro Small and Medium Enterprises (MSMEs) play a pivotal role in ensuring economic development, business opportunities and employment generation. We provide essential MSME advisory services, tailored to meet your everyday business needs. Our team of experienced professionals ensure that MSMEs can sail through the intricacies of the MSME sector.
+                <br><br>
+                <h3>Our MSME services include:</h3>
+                <br>
+                <ul>
+                <li>•	Assistance in the process of business registration and obtaining necessary licenses and permits.</li>
+                <li>•	Ensuring compliance with local, regional, and national regulatory requirements.</li>
+                <li>•	Providing guidance on financial planning, budgeting, and cash flow management.</li>
+                <li>•	Assisting in accessing finance, including loans, grants, and other financial instruments available for MSMEs.</li>
+                <li>•	Advising on the adoption of relevant and cost-effective technologies to enhance efficiency and competitiveness.</li>
+                <li>•	Facilitating the integration of digital tools for improved business processes.</li>
+                <li>•	Offering training programs for MSME owners and employees to enhance their skills and knowledge.</li>
+                <li>•	Providing workshops on topics such as marketing, human resource management, and quality control.</li>
+                <li>•	Offering legal advice on contracts, agreements, and intellectual property protection.</li>
+                <li>•	Keeping MSMEs updated about changes in laws and regulations affecting their business.</li>
+                </ul>
+
+        </div>
+        <div class="box" data-hover-text="">
+            
+        </div>
+    </div>
+    </div> 
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <img src="images/AMlogo.png" class="img-responsive" alt="logo" />
+                <div class="social-icons-footer">
+                    <a href="https://www.facebook.com/profile.php?id=61555289760018">
+                        <i class="fa fa-facebook-square"></i>
+                    </a>
+                    <a href="https://twitter.com/AMC_CA_1950">
+                        <i class="fa fa-twitter-square"></i>
+                    </a>
+                        <!-- <i class="fa fa-instagram"></i> -->
+                        <!-- <i class="fa fa-youtube-square"></i> -->
+                    <a href="https://www.linkedin.com/company/101301664/admin/feed/posts/">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                    </div>
+            </div>
+            <div class="footer-col footer-2-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</li></a>
+                    <li><a href="aboutus.html">About Us</li></a>
+                    <li><a href="team.html">Team</li></a>
+                    <li><a href="services.html"></a>Services</li></a>
+                    <li><a href="implinks.html">Important Links</a></li>
+                    <li><a href="careers.html">Careers</li></a>
+                    <li><a href="knowledge">Knowledge Repertoire</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <!--footer-col-->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-envelope-o"></i> <a href="mailto:amukhopadhyayco@gmail.com">amukhopadhyayco@gmail.com</a></p>
+                <p><i class="fa fa-mobile-phone"></i> <a href="tel:+91 9830107220">+91 9830107220</a></p>
+                <p><i class="fa fa-map-o"></i> <span>Syndicon Residency, 25/1A Naktala Road, Kolkata-700047</span></p>
+            </div>
+            <!--footer-col-->
+            <div class="clear"></div>
+            <hr class="footer-hr">
+            <p class="copyright-footer">&copy; 2020 — Websblog. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <Script src="js/jquery-ui.min.js"></Script>
+    <script src="https://rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <Script src="js/extrenaljq.js" type="text/javascript"></Script>
+    </body>
+    <script>
+    $(document).ready(function() {
+    $("#toggle-bar").click(function() {
+        $(".menu").slideToggle(400);
+    });
+    });
+    
+    </script>
+
+</html>
